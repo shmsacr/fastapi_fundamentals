@@ -1,0 +1,47 @@
+PUT http://127.0.0.1:8000/api/v1/users/7b769d34-e3fc-4226-87d8-388883421d96
+Content-Type: application/json
+
+{
+
+    "first_name": "Fatih",
+    "last_name": "Acar",
+    "middle_name": "Ömer",
+    "gender": "male",
+    "roles": [
+      "admin"
+    ]
+
+}
+
+###
+DELETE http://127.0.0.1:8000/api/v1/users/c33808cf-98b9-47db-94e8-425f9b1bcf52
+Accept: application/json
+
+###
+POST http://127.0.0.1:8000/api/v1/users
+Content-Type: application/json
+
+{
+
+    "first_name": "Yasir",
+    "last_name": "asma",
+    "middle_name": "father",
+    "gender": "female",
+    "roles": [
+      "user"
+    ]
+
+}
+
+###
+# Test your FastAPI endpoints
+
+GET http://127.0.0.1:8000/api/v1/users
+Accept: application/json
+
+###
+
+GET http://127.0.0.1:8000/hello/User
+Accept: application/json
+
+###
